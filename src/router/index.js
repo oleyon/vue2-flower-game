@@ -25,6 +25,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "game" */ "@/views/GameView.vue"),
   },
+  {
+    path: "/editor",
+    name: "editor",
+    component: () =>
+      import(/* webpackChunkName: "editor" */ "@/views/MapEditorView.vue"),
+  },
 ];
 
 const router = new VueRouter({

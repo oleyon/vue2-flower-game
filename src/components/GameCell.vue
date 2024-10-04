@@ -12,8 +12,8 @@ export default {
   },
   methods: {
     onClick() {
-      this.$emit("onClick");
-      console.log("onClick");
+      //this.$emit("onClick");
+      //console.log("onClick");
     },
   },
 };
