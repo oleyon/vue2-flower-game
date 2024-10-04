@@ -1,32 +1,29 @@
 <template>
-  <div class="game_cell" @click="onClick">
+  <div class="game_cell">
     <div class="game_cell__body" :class="'game_cell__body--' + cellType"></div>
   </div>
 </template>
 
 <script>
 export default {
-  emits: ["onClick"],
   props: {
     cellType: Number,
-  },
-  methods: {
-    onClick() {
-      this.$emit("onClick");
-      console.log("onClick");
-    },
   },
 };
 </script>
 
 <style scoped lang="less">
 .game_cell {
+  margin: 5px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
   &__body {
-    width: 50px;
-    height: 50px;
-
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
     &--1 {
-      background-color: red;
+      background-color: rgba(255, 255, 255, 0);
     }
 
     &--2 {

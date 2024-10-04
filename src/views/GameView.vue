@@ -1,18 +1,20 @@
 <template>
-  <div>
-    <GameCell :cell-type="1" />
+  <div class="game_view">
     <GameGrid />
   </div>
 </template>
 
 <script>
-import GameCell from "@/components/GameCell.vue";
 import GameGrid from "@/components/GameGrid.vue";
 
 export default {
   components: {
-    GameCell,
     GameGrid,
   },
 };
 </script>
+
+<style scoped lang="less">
+.game_view {
+}
+</style>

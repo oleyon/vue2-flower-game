@@ -5,7 +5,6 @@
         v-for="(cell, cellIndex) in row"
         :key="cellIndex"
         :cellType="cell"
-        @onClick="handleCellClick(rowIndex, cellIndex)"
       />
     </div>
   </div>
@@ -36,6 +35,7 @@ export default {
 .game_grid {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   &__row {
     display: flex;
